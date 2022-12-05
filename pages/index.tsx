@@ -3,11 +3,12 @@ import { useState } from 'react';
 
 const Home: NextPage = () => {
   const [state, setState] = useState(0);
+  const btnClass = "bg-blue-700 px-5 rounded text-white";
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen  items-center justify-center py-2 gap-10">
       {state}
-      <button onClick={() => setState((s) => s + 1)}>+</button>
-      <button onClick={() => setState((s) => s - 1)}>-</button>
+      <button onClick={() => setState((s) => s + 1)} className={btnClass}>+</button>
+      <button onClick={() => setState((s) => s - 1)} className={btnClass}>-</button>
     </div>
   )
 }
