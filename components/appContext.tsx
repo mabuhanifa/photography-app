@@ -5,7 +5,8 @@ const Context = createContext({});
 type ContextType = { children: React.ReactNode }
 export default function AppContext({ children }: ContextType) {
     const store = {
-        a: "hello"
+        a: "hello",
+        b: []
     }
     return (
         <Context.Provider value={store}>{
