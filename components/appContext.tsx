@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { createContext, useContext } from "react";
 
 const Context = createContext({});
 
@@ -12,4 +12,8 @@ export default function AppContext({ children }: ContextType) {
             children
         }</Context.Provider>
     )
+}
+
+export const useApp = () => {
+    return useContext(Context)
 }
