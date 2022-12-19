@@ -1,9 +1,9 @@
 import '../styles/globals.css'
 export default function Homepage() {
     return (
-        <div>
+        <div className='m-10'>
             <div>
-                <h2 className="text-gray-700">
+                <h2 className="text-gray-700 text-2xl font-bold">
                     tailwind
                 </h2>
             </div>
